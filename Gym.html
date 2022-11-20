@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;500&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Josefin+Sans:wght@100;500&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        color: white;
+        padding: 0px;
+        margin: 0px;
+        background: url('img/gym.jpg')
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        filter: invert(100%);
+        width: 100px;
+        height: 78px;
+    }
+
+    .left div {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
+    .mid {
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 4px 20px;
+    }
+
+    .navbar a:hover,
+    .navbar a.active {
+        text-decoration: underline;
+        color: rgb(238, 150, 150);
+    }
+
+    .btn {
+        color: white;
+        background-color: black;
+        border: 2px solid rgb(238, 150, 150);
+        margin: 8px 12px;
+        border-radius: 10px;
+        padding: 3px 14px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        text-decoration: underline;
+        color: rgb(238, 150, 150);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    }
+
+    .container {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        border: 2px solid white;
+        margin: 130px 107px;
+        padding: 29px 49px;
+        width: 33%;
+        border-radius: 13px;
+    }
+
+    .container button{
+        margin: 1px -3px;
+    }
+
+    .container h1{
+        margin: -7px 2px;
+    }
+
+    .form-type input {
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        border: 2px solid rgb(116, 116, 234);
+        padding: 5px 9px;
+        display: block;
+        border-radius: 10px;
+        margin: 9px -3px;
+        width: 492px;
+    }
+
+    
+</style>
+
+<body>
+    <header class="header">
+
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/logo1.png" alt="">
+            <div>Rohan Fitness</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for options -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join The Best Gym In DELHI NCR</h1>
+        <div class="form">
+            <form action="rohan.php">
+                <div class="form-type">
+                    <input type="text" placeholder="Enter Your name">
+                </div>
+
+                <div class="form-type">
+                    <input type="number" placeholder="Enter Your Phone Number">
+                </div>
+
+                <div class="form-type">
+                    <input type="text" placeholder="Enter Your Email ID">
+                </div>
+                <div class="form-type">
+                    <input type="number" placeholder="Enter Your Age">
+                </div>
+                <div class="form-type">
+                    <input type="text" placeholder="Enter Your Address">
+                </div>
+
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
